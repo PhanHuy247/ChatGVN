@@ -15,24 +15,28 @@ import javax.swing.JTextField;
  *
  * @author Phan Huy
  */
-public class LoginGUI {
-
-    private JFrame _jfMainWindow = new JFrame();
+public class GUILogin {
+    public static String LOGIN = "Login";
+    public static String USER_NAME = "UserName";
+    public static String PASS_WORD = "PassWord";
+    public static String REGISTER = "Register";
+    public static String FORGET_ACCOUNT = "Do you forget account ?";
+    
+    public JFrame _jfMainWindow = new JFrame();
     private JLabel _jlUserName = new JLabel();
     private JTextField _jtfUserName = new JTextField();
     private JLabel _jlPassWord = new JLabel();
     private JTextField _jtfPassWord = new JTextField();
     private JButton _jbLogin = new JButton();
     private JButton _jbRegister = new JButton();
-    private JLabel _jlForgot = new JLabel();
+    public JLabel _jlForgot = new JLabel();
 
     public void buildWindowLogin() {
-        _jfMainWindow.setTitle("Login");
+        _jfMainWindow.setTitle(LOGIN);
         _jfMainWindow.setSize(350, 220);
         _jfMainWindow.setResizable(true);
         _jfMainWindow.setLocationRelativeTo(null);
         configureWindowLogin();
-        windowLoginAction();
         _jfMainWindow.setVisible(true);
 
     }
@@ -41,7 +45,7 @@ public class LoginGUI {
         _jfMainWindow.setBackground(new java.awt.Color(255, 255, 255));
         _jfMainWindow.getContentPane().setLayout(null);
 
-        _jlUserName.setText("UserName");
+        _jlUserName.setText(USER_NAME);
         _jfMainWindow.getContentPane().add(_jlUserName);
         _jlUserName.setBounds(20, 45, 60, 15);
 
@@ -50,7 +54,7 @@ public class LoginGUI {
         _jfMainWindow.getContentPane().add(_jtfUserName);
         _jtfUserName.setBounds(100, 40, 200, 25);
 
-        _jlPassWord.setText("PassWord");
+        _jlPassWord.setText(PASS_WORD);
         _jfMainWindow.getContentPane().add(_jlPassWord);
         _jlPassWord.setBounds(20, 80, 60, 15);
 
@@ -59,21 +63,18 @@ public class LoginGUI {
         _jfMainWindow.getContentPane().add(_jtfPassWord);
         _jtfPassWord.setBounds(100, 75, 200, 25);
 
-        _jbLogin.setText("Login");
+        _jbLogin.setText(LOGIN);
         _jfMainWindow.getContentPane().add(_jbLogin);
         _jbLogin.setBounds(65, 123, 90, 25);
 
-        _jbRegister.setText("Register");
+        _jbRegister.setText(REGISTER);
         _jfMainWindow.getContentPane().add(_jbRegister);
         _jbRegister.setBounds(195, 123, 90, 25);
         
-        _jlForgot.setText("Do you forget account ?");
+        _jlForgot.setText(FORGET_ACCOUNT);
         _jfMainWindow.getContentPane().add(_jlForgot);
-        _jlForgot.setBounds(100, 160, 150, 15);
-        _jlForgot.setBackground(Color.BLUE);
-    }
-
-    private void windowLoginAction() {
+        _jlForgot.setBounds(115, 160, 150, 15);
+        _jlForgot.setForeground(new java.awt.Color(0,0,255));
         
     }
 }

@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package chatgvn;
+package chatgvn.client;
 
-import chatgvn.gui.LoginGUI;
+import chatgvn.gui.GUILogin;
+import chatgvn.gui.GUIResetAccount;
 
 /**
  *
@@ -17,8 +18,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        LoginGUI loginGui = new LoginGUI();
+        GUILogin loginGui = new GUILogin();
         loginGui.buildWindowLogin();
+        ActionGUI actionGui = new ActionGUI(loginGui);
+        actionGui.actionClickLabelForget();
+//        GUIResetAccount guiReset = new GUIResetAccount();
+//        guiReset.buildWindowReset();
     }
     
 }

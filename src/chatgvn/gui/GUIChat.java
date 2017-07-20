@@ -9,6 +9,6 @@ package chatgvn.gui;
  *
  * @author Phan Huy
  */
-public class Chat {
+public class GUIChat {
     
 }

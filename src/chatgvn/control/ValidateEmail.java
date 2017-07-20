@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package chatgvn.gui;
+package chatgvn.control;
 
 /**
  *
  * @author Phan Huy
  */
-public class Register {
+public class ValidateEmail {
     
 }
