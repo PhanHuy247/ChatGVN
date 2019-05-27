@@ -19,11 +19,29 @@ public class Main {
      */
     public static void main(String[] args) {
         GUILogin loginGui = new GUILogin();
-        loginGui.buildWindowLogin();
         ActionGUI actionGui = new ActionGUI(loginGui);
-        actionGui.actionClickLabelForget();
-//        GUIResetAccount guiReset = new GUIResetAccount();
-//        guiReset.buildWindowReset();
+
+        displayLogin(loginGui);
+        actionLogin(actionGui);
+        actionRegister(actionGui);
+        actionForget(actionGui);
+
     }
-    
+
+    private static void displayLogin(GUILogin loginGui) {
+        loginGui.buildWindowLogin();
+    }
+
+    private static void actionLogin(ActionGUI actionGui) {
+    }
+
+    private static void actionRegister(ActionGUI actionGui) {
+        actionGui.actionClickLabelRegister();
+    }
+
+    private static void actionForget(ActionGUI actionGui) {
+
+        actionGui.actionClickLabelForget();
+    }
+
 }

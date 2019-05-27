@@ -16,20 +16,22 @@ import javax.swing.JTextField;
  * @author Phan Huy
  */
 public class GUILogin {
+
     public static String LOGIN = "Login";
     public static String USER_NAME = "UserName";
     public static String PASS_WORD = "PassWord";
     public static String REGISTER = "Register";
     public static String FORGET_ACCOUNT = "Do you forget account ?";
-    
-    public JFrame _jfMainWindow = new JFrame();
+
     private JLabel _jlUserName = new JLabel();
-    private JTextField _jtfUserName = new JTextField();
     private JLabel _jlPassWord = new JLabel();
-    private JTextField _jtfPassWord = new JTextField();
-    private JButton _jbLogin = new JButton();
-    private JButton _jbRegister = new JButton();
+
+    public JFrame _jfMainWindow = new JFrame();
     public JLabel _jlForgot = new JLabel();
+    public JTextField _jtfUserName = new JTextField();
+    public JTextField _jtfPassWord = new JTextField();
+    public JButton _jbLogin = new JButton();
+    public JButton _jbRegister = new JButton();
 
     public void buildWindowLogin() {
         _jfMainWindow.setTitle(LOGIN);
@@ -70,11 +72,11 @@ public class GUILogin {
         _jbRegister.setText(REGISTER);
         _jfMainWindow.getContentPane().add(_jbRegister);
         _jbRegister.setBounds(195, 123, 90, 25);
-        
+
         _jlForgot.setText(FORGET_ACCOUNT);
         _jfMainWindow.getContentPane().add(_jlForgot);
         _jlForgot.setBounds(115, 160, 150, 15);
-        _jlForgot.setForeground(new java.awt.Color(0,0,255));
-        
+        _jlForgot.setForeground(new java.awt.Color(0, 0, 255));
+
     }
 }

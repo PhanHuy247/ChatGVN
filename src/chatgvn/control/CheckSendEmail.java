@@ -9,6 +9,15 @@ package chatgvn.control;
  *
  * @author Phan Huy
  */
-public class ValidateEmail {
+public class CheckSendEmail {
+    public boolean checkDatabaseEmail(String email){
+        
+        sendDataEmail(email);
+        
+        return true;
+    }
     
+    public void sendDataEmail(String email){
+        
+    }
 }
